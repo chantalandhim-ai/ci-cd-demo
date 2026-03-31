@@ -30,3 +30,11 @@ This project demonstrates a CI/CD pipeline using GitHub Actions.
 - Add deployment step
 - Push Docker image to registry
 - Add monitoring and alerts
+
+## CI/CD Architecture
+This project includes:
+- CI pipeline: builds, tests, and creates Docker image
+- CD pipeline: triggered only after successful CI run
+- Workflow dependency using `workflow_run`
+
+This ensures reliable and controlled deployments.
